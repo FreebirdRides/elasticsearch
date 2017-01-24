@@ -1,10 +1,8 @@
 version: 2
 services:
-  elk:
+  elasticsearch:
     build: .
     ports:
-      - 80:5601
-      - 9200:9200
-      - 5044:5044
+      - 9200
     volumes:
       - elk-data:/var/lib/elasticsearch
