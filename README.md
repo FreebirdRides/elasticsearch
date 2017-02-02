@@ -2,7 +2,8 @@
 
 ### Freebird specific
 * Elasticsearch ONLY
-* This app has cpu and memory requirements: `convox scale elasticsearch --memory=2048 --cpu=2048`
+* This app has cpu and memory requirements which are set in `docker-compose.yml`
+* This app requires an update to the host system's `vm.max_map_count`. If it's not already set, `convox rack params set 'InstanceBootCommand="sysctl -w vm.max_map_count=262144"'``
 
 ---
 

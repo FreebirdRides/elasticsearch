@@ -2,6 +2,8 @@ version: 2
 services:
   elasticsearch:
     build: .
+    cpu_shares: 2048
+    mem_limit: 2048MB
     ports:
       - 9200
     volumes:
