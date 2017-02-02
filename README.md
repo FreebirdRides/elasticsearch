@@ -2,7 +2,7 @@
 
 ### Freebird specific
 * Elasticsearch ONLY
-* When doing a fresh deploy, you'll need to scale after the app has been deployed `convox scale elasticsearch --memory=2048 --cpu=2048`
+* This app has cpu and memory requirements: `convox scale elasticsearch --memory=2048 --cpu=2048`
 
 ---
 
